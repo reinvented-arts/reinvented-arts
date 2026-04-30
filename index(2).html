@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reinvented Arts — Drop 01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="loader">
+    <h1>REINVENTED ARTS</h1>
+  </div>
+
+  <div class="topbar">LIMITED DROP • NO RESTOCKS • WORLDWIDE SHIPPING</div>
+
+  <header class="nav">
+    <div class="logo">REINVENTED<br>ARTS</div>
+
+    <nav>
+      <a href="#shop">SHOP</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#lookbook">LOOKBOOK</a>
+      <a href="#access">ACCESS</a>
+    </nav>
+
+    <button class="cart-btn" onclick="toggleCart()">CART (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <img src="hero.png" class="hero-img" alt="Reinvented Arts Drop 01 hero image" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+      <p>LIMITED RELEASE</p>
+      <h1>DROP 01</h1>
+      <h2>DESTROY. REBUILD. REPEAT.</h2>
+      <a href="#shop" class="hero-btn">SHOP DROP 01 →</a>
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+    <div class="section-head">
+      <h2>DROP 01 PIECES</h2>
+      <p>VIEW ALL →</p>
+    </div>
+
+    <div class="products">
+      <div class="card">
+        <span class="tag">LIMITED</span>
+        <div class="img-wrap">
+          <img src="destroy-front.png" class="front" alt="RA Destroy Hoodie front" />
+          <img src="destroy-back.png" class="back" alt="RA Destroy Hoodie back" />
+        </div>
+        <h3>RA DESTROY HOODIE</h3>
+        <p>$95.00 USD</p>
+        <button onclick="addToCart('RA Destroy Hoodie', 95)">ADD TO CART</button>
+      </div>
+
+      <div class="card">
+        <span class="tag">LIMITED</span>
+        <div class="img-wrap">
+          <img src="rebuild-front.png" class="front" alt="Rebuild Tee front" />
+          <img src="rebuild-back.png" class="back" alt="Rebuild Tee back" />
+        </div>
+        <h3>REBUILD TEE</h3>
+        <p>$48.00 USD</p>
+        <button onclick="addToCart('Rebuild Tee', 48)">ADD TO CART</button>
+      </div>
+
+      <div class="card">
+        <span class="tag">LIMITED</span>
+        <div class="img-wrap">
+          <img src="reinvented-front.png" class="front" alt="Reinvented Hoodie front" />
+          <img src="reinvented-back.png" class="back" alt="Reinvented Hoodie back" />
+        </div>
+        <h3>REINVENTED HOODIE</h3>
+        <p>$105.00 USD</p>
+        <button onclick="addToCart('Reinvented Hoodie', 105)">ADD TO CART</button>
+      </div>
+
+      <div class="card">
+        <span class="tag">LIMITED</span>
+        <div class="img-wrap">
+          <img src="shorts-front.png" class="front" alt="Utility Shorts front" />
+          <img src="shorts-back.png" class="back" alt="Utility Shorts back" />
+        </div>
+        <h3>UTILITY SHORTS</h3>
+        <p>$65.00 USD</p>
+        <button onclick="addToCart('Utility Shorts', 65)">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="editorial">
+    <h2>BUILT TO LOOK WORN-IN, RAW, AND REBUILT.</h2>
+    <p>Washed black garments. Distressed artwork. Limited release energy.</p>
+  </section>
+
+  <section class="features">
+    <div>🌐 <b>WORLDWIDE SHIPPING</b><br><span>Fast secure delivery</span></div>
+    <div>🔒 <b>SECURE PAYMENTS</b><br><span>Encrypted checkout</span></div>
+    <div>📦 <b>LIMITED STOCK</b><br><span>No restocks. Ever.</span></div>
+    <div>↺ <b>14 DAY RETURNS</b><br><span>Hassle free returns</span></div>
+  </section>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <button class="close" onclick="toggleCart()">×</button>
+    <h2>CART</h2>
+    <div id="cartItems">No items yet.</div>
+    <h3>Total: $<span id="cartTotal">0</span></h3>
+    <button class="checkout">CHECKOUT COMING SOON</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
