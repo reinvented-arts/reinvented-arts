@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reinvented Arts | Drop 01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">REINVENTED ARTS</div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#story">Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">DROP 01 — REBUILD</p>
+      <h1>DESTROY.<br>REBUILD.<br>REPEAT.</h1>
+      <p class="sub">Heavyweight streetwear built with distressed graphics, washed black tones, and underground energy.</p>
+      <a class="button" href="#shop">Shop Drop 01</a>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <p class="eyebrow">SHOP</p>
+    <h2>Drop 01 Pieces</h2>
+
+    <div class="products">
+      <article class="card">
+        <div class="product-img">RA</div>
+        <h3>RA Destroy Hoodie</h3>
+        <p>Washed black oversized hoodie with distressed front, sleeve, and full back graphics.</p>
+        <div class="price">$95.00</div>
+        <button onclick="addToCart('RA Destroy Hoodie',95)">Add to Cart</button>
+      </article>
+
+      <article class="card">
+        <div class="product-img">TEE</div>
+        <h3>Rebuild Tee</h3>
+        <p>Boxy heavyweight tee with chest logo and oversized back print.</p>
+        <div class="price">$48.00</div>
+        <button onclick="addToCart('Rebuild Tee',48)">Add to Cart</button>
+      </article>
+
+      <article class="card">
+        <div class="product-img">RA</div>
+        <h3>Reinvented Hoodie</h3>
+        <p>Statement hoodie with large handwritten “Reinvented Arts” back graphic.</p>
+        <div class="price">$105.00</div>
+        <button onclick="addToCart('Reinvented Hoodie',105)">Add to Cart</button>
+      </article>
+
+      <article class="card">
+        <div class="product-img">01</div>
+        <h3>Utility Shorts</h3>
+        <p>Black oversized graphic shorts with patch details and streetwear fit.</p>
+        <div class="price">$65.00</div>
+        <button onclick="addToCart('Utility Shorts',65)">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="story" class="section split">
+    <div>
+      <p class="eyebrow">MANIFESTO</p>
+      <h2>Nothing is original. Everything is reinvented.</h2>
+    </div>
+    <p>
+      Reinvented Arts is built around taking old ideas, breaking them apart, and rebuilding them into something new.
+      Drop 01 is dark, raw, oversized, distressed, and made to feel imperfect on purpose.
+    </p>
+  </section>
+
+  <section class="section newsletter">
+    <p class="eyebrow">EARLY ACCESS</p>
+    <h2>Join before the drop.</h2>
+    <form>
+      <input type="email" placeholder="Email address" />
+      <button type="button">Join List</button>
+    </form>
+  </section>
+
+  <aside class="cart" id="cart">
+    <h3>Cart</h3>
+    <div id="cartItems">No items yet.</div>
+    <div class="cart-total">Total: $<span id="cartTotal">0</span></div>
+    <button class="checkout">Checkout Coming Soon</button>
+  </aside>
+
+  <footer id="contact">
+    <div>© 2026 REINVENTED ARTS</div>
+    <div>@reinventedarts</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
